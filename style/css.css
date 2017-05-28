@@ -7,41 +7,78 @@ body{
 .fl{
 	float:left;
 }
-.hitron-wrapper{
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:before,.clearfix:after
+{
+    display: table;
+    content: " ";
+}
+*,:after,:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.rel{
+	position:relative;
+}
+a{
+	color:#1cabf3;
+}
+ul,ol{
+	list-style:none;
+}
+.kxz-wrapper{
 	width:100%;
 	height:100%;
-	margin:0 auto;
-}
-.hitron-header{
 	position:relative;
+	background-color: #f5f5f5;
+}
+.kxz-header{
 	height:65px;
-	width:1366px;
 	border-top:4px solid #1cabf3;
 	background-color:#fff;
 	box-shadow: 0 0 3px rgba(102,102,102,.4);
 	min-width:1200px;
+	position:relative;
+	z-index:1;
 }
 .head-wrap{
-	position:absolute;
 	padding:0 20px;
-	border:1px solid blue;
+	height:100%;
+	border:1px solid orange;
 }
 .logo-content{
-	position:absolute;
 	height:100%;
-	width:568px;
+	width:199px;
 	display:table;
 	border:1px solid red;
 }
 .logo-content a{
 	display:table-cell;
 	height:36px;
-	vertical-align:middle;
-	background-color: transparent;
+	
 	border:1px solid red;
 
 }
-#header-product-list{
+.logo-content a img{
+	vertical-align:middle;
+}
+.woqu-product-list{
+	width:200px;
 	margin-left:80px;
-	list-style:none;
+}
+.woqu-product-list li{
+	float:left;
+	height:40px;
+	margin-top: 10px;
+	margin-right: 40px;
+	text-align: center;
+}
+.woqu-product-list li a {
+	font-size: 16px;
+	color:#000;
+	height:22px;
+	line-height:40px;
 }
