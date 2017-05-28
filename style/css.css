@@ -1,0 +1,47 @@
+body{
+	font-family: "Microsoft YaHei", sans-serif;
+	color:#333;
+	font-size:14px;
+	line-height:20px;
+}
+.fl{
+	float:left;
+}
+.hitron-wrapper{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+.hitron-header{
+	position:relative;
+	height:65px;
+	width:1366px;
+	border-top:4px solid #1cabf3;
+	background-color:#fff;
+	box-shadow: 0 0 3px rgba(102,102,102,.4);
+	min-width:1200px;
+}
+.head-wrap{
+	position:absolute;
+	padding:0 20px;
+	border:1px solid blue;
+}
+.logo-content{
+	position:absolute;
+	height:100%;
+	width:568px;
+	display:table;
+	border:1px solid red;
+}
+.logo-content a{
+	display:table-cell;
+	height:36px;
+	vertical-align:middle;
+	background-color: transparent;
+	border:1px solid red;
+
+}
+#header-product-list{
+	margin-left:80px;
+	list-style:none;
+}
