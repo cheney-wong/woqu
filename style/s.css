@@ -1,0 +1,22 @@
+.wrapper {
+	position:relative;
+	width:360px;
+	border:5px solid #fff;
+}
+.left {
+	background:url(../images/1.jpg);
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+.right {
+	position:absolute;
+	left:0;
+	top:0;
+	background:url(../images/2.jpg); 
+	-webkit-mask-image: -webkit-linear-gradient(left top, transparent 50%,#ddd 50%);
+	/*background:url(../images/2.jpg);*/
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
