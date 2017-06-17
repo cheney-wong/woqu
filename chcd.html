@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>零框架实现侧滑菜单</title>
+	<style type="text/css">
+		.sidenav {
+			height:100%;
+			width:0px;
+			position: fixed;
+			z-index:1;
+			top:0;
+			left:0;
+			background-color:#111;
+			overflow-x:hidden;
+			transition:0.5s;
+			padding-top: 60px;
+			white-space: nowrap;
+		}
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration:none;
+			font-size:25px;
+			color:#818181;
+			display:block;
+			transition: 0.3s;
+		}
+	</style>
+	<script type="text/javascript">
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0px";
+			document.getElementById("main").style.marginLeft = "0px";
+			document.body.style.backgroundColor = "white";
+		}
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,.4)";
+		}
+	</script>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">主页</a>
+		<a href="#">关于我们</a>
+		<a href="#">更多示例</a>
+		<a href="#">联系我们</a>
+	</div>
+	<div id="main">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;打开</span>
+	</div>
+</body>
+</html>
